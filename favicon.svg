@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+	<!-- Border -->
+	<path stroke="black" stroke-width="2" fill="none"
+		d="
+M 10 30
+V 	 60
+Q 10 80, 20 80
+H 30
+Q 32.5,79.5, 32.5,79
+T 35,78
+H 65
+Q 67.5,78.5, 67.5,79
+T 70,80
+H 80
+Q 90,80, 90,70
+V 	 30
+Q 90,20, 80,20
+H 70
+Q 67.5,20.5, 67.5,21
+T 65,22
+H 35
+Q 32.5,21.5, 32.5,21
+T 30,20
+H 20
+Q 10,20, 10,30
+		" />
+
+	<!-- Internal Frame -->
+	<path stroke="black" stroke-width="1" fill="none"
+		d="
+M 20 30
+V 	 25
+H 30
+
+M 80 30
+V 	 25
+H 70
+
+M 80 70
+V 	 75
+H 70
+
+M 20 70
+V 	 75
+H 30
+		" />
+
+	<!-- Central Arch -->
+	<path stroke="black" stroke-width="1" fill="none" d="M 30.2,32.2 A 28,28 0 0 1 69.8,71.8" />
+
+	<!-- AI Letters -->
+	<text x="47" y="61" font-family="Monotype Corsiva" font-size="40" stroke="black" text-anchor="middle">AI</text>
+</svg>
