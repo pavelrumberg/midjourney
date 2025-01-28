@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>My site</title>
 <!--
@@ -17,7 +18,8 @@
 		html,body{
 			padding:0;
 			margin:0;
-			background-color:#000
+			background-color:#000;
+			scroll-behavior:smooth
 		}
 		a{
 			text-decoration:none;
@@ -26,19 +28,46 @@
 		h1{
 			margin:0
 		}
+		h2{
+			color:#FFF;
+			text-align:center;
+		}
+		h3{
+			text-align:left;
+			color:rgb(202 187 98)
+		}
+		ul{
+			color:#FFF
+		}
 		b{
 			text-transform:uppercase
 		}
 
 		section{
 			height:100vh;
-			padding:5px 10px;
+			padding:2vh 2vw;
+		}
+
+		.page{
+			color:#FFF
+		}
+		.back-to-top{
+			display:block;
+			text-align:center;
+			color:rgb(202 187 98)
+		}
+
+		.page_wrapper{
+			display:flex;
+			justify-content:space-evenly;
+		}
+		.sided-content{
+			flex:1
 		}
 
 		section#main{
 			background:transparent url("https://raw.githubusercontent.com/pavelrumberg/midjourney/refs/heads/main/main_page_bg.jpg") right center no-repeat;
 			background-size:cover;
-			padding:5vh 10px;
 		}
 		.navigation{
 			width:100%;
@@ -127,6 +156,47 @@
 
 		}
 
+		@media( max-width:600px ){
+
+			section#main{
+				background-position:top right;
+				background-size:contain;
+			}
+
+			.navigation{
+				padding:0
+			}
+			
+			.main_title {
+				padding:24vw 5vw;
+			}
+			
+			.description {
+				padding:10vw 5vw;
+				font-size:4vw;
+				color:#FFF;
+			}
+
+			.link_to_video {
+				padding:10vw 5vw;
+			}
+
+			.youtube_link_image{
+				width:40vw;
+				height:40vw;
+			}
+
+			.page_wrapper{
+				display:block
+			}
+			.sided-content{
+				width:100%;
+				text-align:center;
+				font-size:2vw
+			}
+
+		}
+
 	</style>
 
 	<script>
@@ -182,16 +252,46 @@
 
 	</section>
 	
-    <section id="page_1">
-		This is Page 1
+    <section id="about" class="page">
+		<a href="#" class="back-to-top">Back to Top</a>
+		This is "About" Page
 	</section>
 
-    <section id="page_2">
-		This is Page 2
+    <section id="program" class="page">
+		<a href="#" class="back-to-top">Back to Top</a>
+		This is "Program" Page
 	</section>
 
-    <section id="page_3">
-		This is Page 3
+	<section id="autor" class="page">
+		<a href="#" class="back-to-top">Back to Top</a>
+		This is "Autor" Page
+	</section>
+
+    <section id="pricelist" class="page">
+		<a href="#" class="back-to-top">Back to Top</a>
+
+		<h2>Тарифы</h2>
+
+		<div class="page_wrapper">
+			<div class="sided-content">
+				<h3>Первая Колонка</h3>
+				<ul>
+					<li>Blabla 1</li>
+					<li>Blabla 2</li>
+					<li>Blabla 3</li>
+				</ul>
+			</div>
+
+			<div class="sided-content">
+				<h3>Вторая Колонка</h3>
+				<ul>
+					<li>Blabla 4</li>
+					<li>Blabla 5</li>
+					<li>Blabla 6</li>
+				</ul>
+			</div>
+		</div>
+
 	</section>
 
 </body>
